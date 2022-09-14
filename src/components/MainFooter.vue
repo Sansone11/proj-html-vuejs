@@ -4,10 +4,7 @@
         <div class="logo list">
           <img src="../assets/img/footer-logo-1.png" alt="">
           <ul>
-            <li><a href="#">Providing Life Changing</a></li>
-            <li><a href="#">Experience Trough</a></li>
-            <li><a href="#">Education.Class that Fit Your</a></li>
-            <li><a href="#">Busy Life.Closer to Home</a></li>
+            <li v-for="experience in logoList" :key="experience" ><a href="#">{{experience}}</a></li>
           </ul>
           <span><a href="#">1-677-124-44227</a></span>
           <span><a href="#">Man-Sat 8.00 - 18.00</a></span>
@@ -15,26 +12,19 @@
         <div class="course list">
           <h2 class="sub__title">Popular Courses</h2>
           <ul>
-            <li class="study"><a href="#">Business English</a></li>
-            <li><a href="#">Preston Marshal</a></li>
+            <li v-for="business in courseBusiness" :key="business" class="study"><a href="#">{{business}}</a></li>
           </ul>
           <ul>
-            <li class="study"><a href="#">Social Computing</a></li>
-            <li><a href="#">David Sanders</a></li>
+            <li v-for="computed in courseComputing" :key="computed" class="study"><a href="#">{{computed}}</a></li>
           </ul>
           <ul>
-            <li class="study"><a href="#">Learn Spanish</a></li>
-            <li><a href="#">Jennie King</a></li>
+            <li v-for="spanish in courseSpanish" :key="spanish" class="study"><a href="#">{{spanish}}</a></li>
           </ul>
         </div>
         <div class="support list">
           <h2 class="sub__title">Support</h2>
           <ul>
-            <li><a href="#">User dashboard</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Course Offer</a></li>
-            <li><a href="#">Events</a></li>
+            <li v-for="help in support" :key="help"><a href="#">{{help}}</a></li>
           </ul>
         </div>
         <div class="world__map">
@@ -63,10 +53,17 @@
   
   <script>
   export default {
-    name: 'HelloWorld',
-    props: {
-      msg: String
+   data(){
+    return{
+      logoList:['Providing Life Changing','Experience Trough','Education.Class that Fit Your','Busy Life.Closer to Home'],
+      courseBusiness:['Business English','Preston Marshal'],
+      courseComputing:['Social Computing','David Sanders'],
+      courseSpanish:['Learn Spanish','Jennie King'],
+      support:['User dashboard','Contact Us','FAQ','Course Offer','Events']
     }
+    
+      
+   }
   }
   </script>
   

@@ -3,14 +3,9 @@
         <div class="nav__bar">
             <div class="logo">
                 <img src="../assets/img/logo-light.png" alt="">
-            </div>
+            </div> 
             <ul class="menu">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">COURSES</a></li>
-                <li><a href="#">INSTRUCTORS</a></li>
-                <li><a href="#">EVENTS</a></li>
-                <li><a href="#">PAGES</a></li>
-                <li><a href="#">ELEMENTS</a></li>
+                <li v-for="option in menu" :key="option" ><a  href="#">{{option}}</a></li>
             </ul>
             <ul class="menu__icon">
                 <li><a href="#">#</a></li>
@@ -44,9 +39,10 @@
   
 <script>
 export default {
-    name: 'HelloWorld',
-    props: {
-        msg: String
+    data(){
+        return{
+            menu: ['HOME','COURSES','INSTRUCTORS','EVENTS','PAGES','ELEMENTS']
+        }
     }
 }
 </script>
@@ -78,6 +74,11 @@ export default {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .menu{
+        display: flex;
+        gap: 3rem;
     }
 
     .register {
@@ -146,7 +147,7 @@ export default {
 
     }
 
-    .menu {
+    li{
         gap: 3rem;
     }
 
