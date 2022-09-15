@@ -6,6 +6,9 @@
   <SectionThree/>
   <SectionFour/>
   <SectionFive/>
+  <SectionSix/>
+  <SectionSeven/>
+  <SectionEight/>
   <MainFooter/>
 </template>
 
@@ -18,6 +21,9 @@ import SectionTwo from './components/SectionTwo.vue';
 import SectionThree from './components/SectionThree.vue';
 import SectionFour from './components/SectionFour.vue';
 import SectionFive from './components/SectionFive.vue';
+import SectionSix from './components/SectionSix.vue';
+import SectionSeven from './components/SectionSeven.vue';
+import SectionEight from './components/SectionEight.vue';
 
 export default {
   name: 'App',
@@ -29,7 +35,10 @@ export default {
     SectionTwo,
     SectionThree,
     SectionFour,
-    SectionFive
+    SectionFive,
+    SectionSix,
+    SectionSeven,
+    SectionEight
 }
 }
 </script>
