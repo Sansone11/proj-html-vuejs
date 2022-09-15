@@ -42,7 +42,7 @@
             <li><a href="#">FOLLOW US</a></li>
           </ul>
           <ul class="icons">
-            <li><a href="#">#</a></li>
+            <li><a href="#"><font-awesome-icon icon="fa-brands fa-twitter" /></a></li>
             <li><a href="#">#</a></li>
             <li><a href="#">#</a></li>
           </ul>
@@ -74,6 +74,8 @@
     background-color:$-footer-bg;
     padding: 0 40px;
     padding-top: 40px;
+    width: 1200px;
+    margin:0 auto;
     .content__wrapper{
       display: flex;
       flex-direction: row;
@@ -81,7 +83,7 @@
       justify-content: center;
       align-items: baseline;
       height: 300px;
-      width: 100%;
+      
       .world__map>img{
         width: 230px;
         height: 120px;
@@ -97,9 +99,6 @@
       list-style: none;
       margin-right: auto;
     }
-    // .list>li{
-    //   line-height: 25px;
-    // }
     
     a{
       text-decoration: none;

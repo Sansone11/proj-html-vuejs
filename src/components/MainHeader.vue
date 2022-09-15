@@ -16,8 +16,11 @@
         </div>
         <div class="hero">
             <h1>Contemporany ideas</h1>
-            <p>Lorem ipsum gravida nibh vel velit auctor aliquentean sollicitudin,lorem quis bibendum auci elit
-                consequat ipsutis sem nibh id elited odio siy amet nibcursus a sit amet mauris.</p>
+            <div class="text">
+                <p>Lorem ipsum gravida nibh vel velit auctor aliquentean sollicitudin,lorem quis bibendum auci elit
+                consequat</p>
+                <p >ipsutis sem nibh id elited odio siy amet nibcursus a sit amet mauris.</p>
+            </div>
             <button class="register"><a href="#">Register Now</a></button>
         </div>
         <ul class="circle__select">
@@ -28,7 +31,7 @@
                 <div class="circle"></div>
             </li>
             <li>
-                <div class="circle centre"><span id="point"></span></div>
+                <img src="../assets/img/interactive-map-slider-icon-close.png" alt="">
             </li>
         </ul>
         <div class="overlay">
@@ -59,6 +62,8 @@ export default {
     padding-top: 30px;
     position: relative;
     text-align: center;
+    width: 1200px;
+    margin:0 auto;
 
     .overlay {
         position: absolute;
@@ -66,7 +71,7 @@ export default {
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: rgba($color: #000000, $alpha: 0.2);
+        // background-color: rgba($color: #000000, $alpha: 0.4);
     }
 
     .hero {
@@ -74,6 +79,7 @@ export default {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        min-height: 600px;
     }
 
     .menu{
@@ -82,17 +88,23 @@ export default {
     }
 
     .register {
-        height: 50px;
-        width: 200px;
+        height: 70px;
+        width: 250px;
         color: white;
         background-color: $-register-button;
         border: none;
+        margin-bottom: 15rem;
     }
 
     .register>a {
         text-decoration: none;
         color: white;
         font-weight: bold;
+        
+    }
+
+    .text{
+        margin-bottom: 40px;
     }
 
     .circle__select {
@@ -105,8 +117,8 @@ export default {
     }
     .circle{
         display: flex;
-        height: 12px;
-        width: 12px;
+        height: 11px;
+        width: 11px;
         border: solid 2px;
         border-radius: 50%;
         color:white;
@@ -117,15 +129,11 @@ export default {
     .centre{
         align-self: center;
         justify-self: center;
+        border: none;
     }
-    #point{
-        height: 2px;
-        width: 2px;
-        border: solid 2px;
-        background-color: white;
-        border-radius: 50%;
-        align-self: center;
-        justify-self: center;
+    .centre>img{
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -158,15 +166,13 @@ export default {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 100px;
     color: $-hero-write;
 }
 
 p {
     color: white;
-    max-width: 780px;
-    display: block;
-    margin-bottom: 10px;
+    font-size: 25px;
 }
 </style>
   
