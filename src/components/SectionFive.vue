@@ -3,12 +3,12 @@
         <div class="container">
             <div class="side__card">
                 <ul class="service">
-                    <li class="active"><a href="#">What We Do</a></li>
-                    <li><a href="#">Degree Programme</a></li>
-                    <li><a href="#">Carrer Achivevements</a></li>
-                    <li><a href="#">Personal Management</a></li>
-                    <li><a href="#">Steps To Success</a></li>
-                    <li><a href="#">Knowledge Transfer</a></li>
+                    <li class="active select"><a href="#">What We Do</a></li>
+                    <li class="select"><a class="mat" href="#">Degree Programme</a></li>
+                    <li class="select"><a class="mat" href="#">Carrer Achivevements</a></li>
+                    <li class="select"><a class="mat" href="#">Personal Management</a></li>
+                    <li class="select"><a class="mat" href="#">Steps To Success</a></li>
+                    <li class="select"><a  class="mat" href="#">Knowledge Transfer</a></li>
                 </ul>
             </div>
             <div class="Learning__service">
@@ -42,10 +42,10 @@ export default {
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import'../assets/Style.scss';
+@import'../components/Style.scss';
 
 .row {
-    width: 1200px;
+    width: 1350px;
     margin: 0 auto;
     padding-top: 8rem;
     position: relative;
@@ -55,6 +55,10 @@ export default {
         flex-direction: row;
         column-gap: 4rem;
         margin-bottom: 80px;
+
+        *{
+            font-family: "Open-Sans", sans-serif;
+        }
 
         .side__card {
             flex-basis: 30%;
@@ -103,7 +107,16 @@ export default {
             font-size: 20px;
             max-width: 410px;
         }
-
+        .select:hover {
+            border-left: solid 8px $-top-icon-bg;
+            color: $-top-icon-bg;
+        }
+         .mat:hover{
+             color: $-top-icon-bg;
+         }
+        .solutions>li:hover {
+            color: $-top-icon-bg;
+        }
         img {
             height: 180px;
             width: 180px;

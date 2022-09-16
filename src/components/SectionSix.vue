@@ -2,7 +2,8 @@
     <div class="row">
         <div class="container">
             <h2>Popular OnLine Courses</h2>
-            <p class="subTitle">Lorem ipsum gravida nibh vel velit auctor aliquentean sollicitudin,lorem quis bibendum auci elit
+            <p class="subTitle">Lorem ipsum gravida nibh vel velit auctor aliquentean sollicitudin,lorem quis bibendum
+                auci elit
                 consequat ipsutis sem nibh id elit</p>
             <div class="card__wrapper">
                 <div class="card">
@@ -21,8 +22,8 @@
                             posidonum
                             interpretaris</p>
                         <ul>
-                            <li><a href="#"><img class="like" src="../assets/img/AT9YNs6Rbpt.png" alt=""></a></li>
-                            <li><a href="#">PROGRAMMING</a></li>
+                            <li><a href="#"><i class="fa-solid fa-user"></i></a>1</li>
+                            <li><a href="#"><i class="fa-solid fa-tag"></i>PROGRAMMING</a></li>
                         </ul>
                     </div>
                 </div>
@@ -42,8 +43,8 @@
                             posidonum
                             interpretaris</p>
                         <ul>
-                            <li><a href="#"><img class="like" src="../assets/img/AT9YNs6Rbpt.png" alt=""></a></li>
-                            <li><a href="#">PROGRAMMING</a></li>
+                            <li><a href="#"><i class="fa-solid fa-user"></i></a>1</li>
+                            <li><a href="#"><i class="fa-solid fa-tag"></i>PROGRAMMING</a></li>
                         </ul>
                     </div>
                 </div>
@@ -63,8 +64,8 @@
                             posidonum
                             interpretaris</p>
                         <ul>
-                            <li><a href="#"><img class="like" src="../assets/img/AT9YNs6Rbpt.png" alt=""></a></li>
-                            <li><a href="#">BUSINESS</a></li>
+                            <li><a href="#"><i class="fa-solid fa-user"></i></a>1</li>
+                            <li><a href="#"><i class="fa-solid fa-tag"></i>BUSINESS</a></li>
                         </ul>
                     </div>
                 </div>
@@ -102,10 +103,10 @@ export default {
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import'../assets/Style.scss';
+@import'../components/Style.scss';
 
 .row {
-    width: 1200px;
+    width: 1350px;
     margin: 0 auto;
     position: relative;
     min-height: 600px;
@@ -113,9 +114,12 @@ export default {
     border-top: solid 2px $-border-raw;
     padding-top: 5rem;
 
+    * {
+        font-family: "Open-Sans", sans-serif;
+    }
+
     .container {
         min-height: 500px;
-        max-width: 1200px;
         margin: 0 auto;
         padding: 0, 50px;
         margin-bottom: 10rem;
@@ -125,15 +129,18 @@ export default {
             display: flex;
             flex-direction: row;
             column-gap: 3rem;
-            
+
         }
-        h2{
+
+        h2 {
             font-size: 60px;
         }
-        .subTitle{
+
+        .subTitle {
             font-size: 30px;
             max-width: 1000px;
             margin-bottom: 8rem;
+            margin-left: 11rem;
         }
 
         .card {
@@ -240,28 +247,30 @@ export default {
                 background-color: $-register-button;
             }
         }
+
         .top {
-                position: absolute;
-                right: 0;
-                top: 5%;
-                height: 80px;
-                width: 80px;
-                text-align: center;
-                background-color: $-top-icon-bg;
-                color: white;
-                font-weight: bold;
-            }
-            .top_1 {
-                position: absolute;
-                right: 0;
-                bottom: 2%;
-                height: 80px;
-                width: 80px;
-                text-align: center;
-                background-color: $-top-icon-bg;
-                color: white;
-                font-weight: bold;
-            }
+            position: absolute;
+            right: 0;
+            top: 5%;
+            height: 80px;
+            width: 80px;
+            text-align: center;
+            background-color: $-top-icon-bg;
+            color: white;
+            font-weight: bold;
+        }
+
+        .top_1 {
+            position: absolute;
+            right: 0;
+            bottom: 2%;
+            height: 80px;
+            width: 80px;
+            text-align: center;
+            background-color: $-top-icon-bg;
+            color: white;
+            font-weight: bold;
+        }
     }
 }
 </style>

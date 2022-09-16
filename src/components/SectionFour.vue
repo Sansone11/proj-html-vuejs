@@ -42,16 +42,19 @@ export default {
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import'../assets/Style.scss';
+@import'../components/Style.scss';
 
 .row {
-    width: 1200px;
+    width:1350px;
     margin:0 auto;
+    *{
+    font-family: "Open-Sans",sans-serif;
+    }
 }
 
 .container {
     min-height: 700px;
-    width: 1200px;
+    width: 100%;
     background-image: url(../assets/img/h5-parallax-img-1.png);
     background-size: cover;
     color: white;

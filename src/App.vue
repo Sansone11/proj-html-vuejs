@@ -1,15 +1,17 @@
 <template>
-  <MainHeader/>
-  <MainContent/>
-  <SectionOne/>
-  <SectionTwo/>
-  <SectionThree/>
-  <SectionFour/>
-  <SectionFive/>
-  <SectionSix/>
-  <SectionSeven/>
-  <SectionEight/>
-  <MainFooter/>
+  <!-- <div id="app"> -->
+    <MainHeader/>
+    <MainContent/>
+    <SectionOne/>
+    <SectionTwo/>
+    <SectionThree/>
+    <SectionFour/>
+    <SectionFive/>
+    <SectionSix/>
+    <SectionSeven/>
+    <SectionEight/>
+    <MainFooter/>
+  <!-- </div> -->
 </template>
 
 <script>

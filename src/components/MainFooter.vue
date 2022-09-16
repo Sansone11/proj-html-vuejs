@@ -42,9 +42,9 @@
             <li><a href="#">FOLLOW US</a></li>
           </ul>
           <ul class="icons">
-            <li><a href="#"><font-awesome-icon icon="fa-brands fa-twitter" /></a></li>
-            <li><a href="#">#</a></li>
-            <li><a href="#">#</a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
           </ul>
         </div>
       </div>
@@ -69,83 +69,96 @@
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->
   <style scoped lang="scss">
-   @import'../assets/Style.scss';
-   .main__footer{
-    background-color:$-footer-bg;
+   @import'../components/Style.scss';
+   .main__footer {
+    background-color: $-footer-bg;
     padding: 0 40px;
     padding-top: 40px;
-    width: 1200px;
-    margin:0 auto;
-    .content__wrapper{
-      display: flex;
-      flex-direction: row;
-      border-bottom: solid 2px $-footer-text ;
-      justify-content: center;
-      align-items: baseline;
-      height: 300px;
-      
-      .world__map>img{
-        width: 230px;
-        height: 120px;
-      }
-      .logo>img{
-        height: 30px;
-        width: 170px;
-        color: $-footer-title;
-        margin-left: 35px;
-      }
-    }
-    ul{
-      list-style: none;
-      margin-right: auto;
-    }
-    
-    a{
-      text-decoration: none;
-      color:$-footer-text;
-      font-size: 16px;
-      line-height: 20px;
-    }
-    .copyrights{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      .follow__us{
+    width: 1350px;
+    margin: 0 auto;
+
+    .content__wrapper {
         display: flex;
-        align-items: center;
-        height: 100px;
-        .icons{
-          display: flex;
-          align-items: center;
-          height: 100px;
-          gap: 2rem;
+        flex-direction: row;
+        border-bottom: solid 2px $-footer-text ;
+        justify-content: center;
+        align-items: baseline;
+        height: 300px;
+
+        .world__map>img {
+            width: 230px;
+            height: 120px;
         }
-      }
+
+        .logo>img {
+            height: 30px;
+            width: 170px;
+            color: $-footer-title;
+            margin-left: 35px;
+        }
     }
-    h2{
-      color:$-footer-title; 
+
+    ul {
+        list-style: none;
+        margin-right: auto;
+
     }
-    .sub__title{
-      margin-left: 35px;
+
+    a {
+        text-decoration: none;
+        color: $-footer-text;
+        font-size: 16px;
+        line-height: 20px;
     }
-    #world__title{
-      text-align: left;
+
+    .copyrights {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .follow__us {
+            display: flex;
+            align-items: center;
+            height: 100px;
+
+            .icons {
+                display: flex;
+                align-items: center;
+                height: 100px;
+                gap: 2rem;
+            }
+        }
     }
-    .study{
-      font-weight: bold;
+
+    h2 {
+        color: $-footer-title;
     }
-    .list{
-      flex-basis: calc(100%/4);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      
+
+    .sub__title {
+        margin-left: 35px;
     }
-    
-    span{
-      margin-left: 40px;
+
+    #world__title {
+        text-align: left;
     }
-   }
+
+    .study {
+        font-weight: bold;
+    }
+
+    .list {
+        flex-basis: calc(100%/4);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+    }
+
+    span {
+        margin-left: 40px;
+    }
+}
+  
   </style>
   
