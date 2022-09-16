@@ -113,6 +113,8 @@ export default {
     padding: 0 30px;
     border-top: solid 2px $-border-raw;
     padding-top: 5rem;
+    background-image: url(../assets/img/page-background-img.png);
+    background-position: center;
 
     * {
         font-family: "Open-Sans", sans-serif;
@@ -159,6 +161,11 @@ export default {
             color: $-footer-text ;
             margin-top: 0;
             padding-top: 0;
+        }
+
+        .card:hover {
+            opacity: 0.9;
+            background-color:$-card-bg;
         }
 
         img {

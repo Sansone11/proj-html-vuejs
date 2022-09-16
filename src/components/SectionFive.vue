@@ -110,10 +110,11 @@ export default {
         .select:hover {
             border-left: solid 8px $-top-icon-bg;
             color: $-top-icon-bg;
-        }
-         .mat:hover{
+            .mat{
              color: $-top-icon-bg;
          }
+        }
+         
         .solutions>li:hover {
             color: $-top-icon-bg;
         }

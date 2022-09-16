@@ -172,10 +172,13 @@ export default {
         text-decoration: none;
         color: white;
     }
-    .options:hover{
-        background-color:$-register-button ;
-        opacity: 0.5;
+    li:hover{
+        color:$-register-button ;
+        i{
+            color: white;
+        }
     }
+    
 }
 
 h1 {

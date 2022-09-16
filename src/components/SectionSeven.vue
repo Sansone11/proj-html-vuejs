@@ -1,6 +1,8 @@
 <template>
     <div class="row">
         <div class="container">
+            <h2>Pricing Plans</h2>
+            <p class="sub__title">Lorem ipsum nibh vel velit auctor aliquentean sollicitudin,lorem quis bibendum auci</p>
             <div class="card__wrapper">
                 <div class="card">
                     <div class="header">
@@ -38,7 +40,7 @@
                             <li><a class="mat" href="#"><i class="fa-solid fa-xmark"></i></a></li>
                             <li>
                                 <div class="but__wrapprer">
-                                    <button><a href="#">GET IT NOW</a></button>
+                                    <button><a class="special" href="#">GET IT NOW</a></button>
                                 </div>
                             </li>
                         </ul>
@@ -111,7 +113,10 @@ export default {
     padding-left: 5rem;
     padding-right: 5rem;
     background-image: url(../assets/img/page-background-img.png);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-top: solid 2px $-border-raw;
+    padding-top: 6rem;
 
     * {
         font-family: "Open-Sans", sans-serif;
@@ -121,6 +126,7 @@ export default {
         min-height: 500px;
         margin: 0 auto;
         width: 100%;
+        margin-bottom: 12rem;
     }
 
     ul,
@@ -135,9 +141,21 @@ export default {
         text-decoration: none;
         font-size: 20px;
         width: 100%;
+        color:$-text-grey ;
        
     }
-    
+    h2{
+        font-size: 70px;
+        text-align: center;
+        margin-bottom:30px;
+    }
+    .sub__title{
+        text-align: center;
+        font-size: 25px;
+        margin-top: 0;
+        padding-top: 0;
+        margin-bottom: 8rem;
+    }
 
     p {
         font-size: 20px;
@@ -213,31 +231,34 @@ ul {
 
 }
 
+
 button {
     height: 60px;
     width: 250px;
     margin-top: 20px;
     margin-bottom: 20px;
-    border: none;
+    border-color:$-border-raw ; 
+    background-color:$-border-raw ;
 }
 
 .but__wrapprer {
     margin-top: 20px;
-    margin-bottom: 20px
-}
+    margin-bottom: 20px;
+    color:$-footer-text ;
+    
 
+}
 
 .but__wrapprer>a {
-    color: $-footer-text;
+    color:white;
     font-weight: bold;
 }
-
-.card.selected {
-    border-top: solid 4px $-register-button;
-
+button:hover {
+    background-color:$-register-button ;
+    border: none;
+   a{
+    color: white;
+   }
 }
 
-.card.selected>.card__header {
-    background-color: $-card-bg;
-}
 </style>

@@ -36,6 +36,7 @@ export default {
     width: 1350px;
     margin: 0 auto;
     position: relative;
+    border-top: solid 2px $-border-raw;
 
     .top {
         position: absolute;

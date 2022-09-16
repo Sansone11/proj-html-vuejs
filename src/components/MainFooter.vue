@@ -158,6 +158,9 @@
     span {
         margin-left: 40px;
     }
+    a:hover{
+      color: white;
+    }
 }
   
   </style>
