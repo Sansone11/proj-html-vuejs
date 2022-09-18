@@ -9,15 +9,8 @@
                         <h3>Save up to 40% by payng weekly</h3>
                     </div>
                     <div>
-                        <ul>
-                            <li><a class="mat" href="#">Number of Courses</a></li>
-                            <li><a class="mat" href="#">Time</a></li>
-                            <li><a class="mat" href="#">Web Designing</a></li>
-                            <li><a class="mat" href="#">Human-Centered Design</a></li>
-                            <li><a class="mat" href="#">Basic Markrting</a></li>
-                            <li><a class="mat" href="#">Python for Everybody</a></li>
-                            <li><a class="mat" href="#">Android Developer</a></li>
-                            <li><a class="mat" href="#">Business English</a></li>
+                        <ul class="offer">
+                            <li v-for="option in listOffer" :key="option"><a class="mat" href="#">{{option}}</a></li>
                         </ul>
 
                     </div>
@@ -98,7 +91,11 @@
   
 <script>
 export default {
-
+data(){
+    return{
+        listOffer:['Number of Courses','Time','Web Designing','Human-Centered Design','Basic Markrting','Python for Everybody','Android Developer','Business English'],
+    }
+}
 
 }
 </script>
@@ -199,6 +196,11 @@ export default {
 
     li:hover {
         background-color: $-card-bg;
+    }
+
+    .offer>li:hover{
+        border-left: solid 4px $-register-button;
+        color: $-top-icon-bg;
     }
 
     li:hover .mat>a{
