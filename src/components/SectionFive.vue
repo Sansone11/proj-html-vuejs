@@ -24,7 +24,7 @@
                 </ul>
                 <figure><img src="../assets/img/h12-tabs-icon-1.png" alt=""></figure>
                 <div class="top">
-                    <h2>TOP</h2>
+                    <span>TOP</span>
                 </div>
             </div>
 
@@ -100,12 +100,14 @@ export default {
             font-size: 20px;
             max-width: 600px;
             margin-bottom: 40px;
+            color:$-text-grey ;
         }
 
         .solutions {
             line-height: 50px;
             font-size: 20px;
             max-width: 410px;
+            color:$-text-grey ;
         }
         .select:hover {
             border-left: solid 8px $-top-icon-bg;
@@ -135,6 +137,12 @@ export default {
             text-align: center;
             background-color: $-top-icon-bg;
             color: white;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
             font-weight: bold;
         }
     }

@@ -18,7 +18,7 @@
                         <p class="state__data">Events</p>
                     </div>
                     <div class="top">
-                        <h2>TOP</h2>
+                        <span>TOP</span>
                     </div>
                 </div>
             </div>
@@ -79,6 +79,7 @@
                 font-size: 20px;
                 max-width: 400px;
                 margin-bottom: 0;
+                color:$-text-grey ;
             }
 
             .stats {
@@ -124,6 +125,12 @@
         text-align: center;
         background-color: $-top-icon-bg;
         color: white;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
         font-weight: bold;
     }
 }

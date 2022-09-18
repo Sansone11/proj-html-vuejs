@@ -8,7 +8,7 @@
             <h5>LEARN MORE</h5>
             <div class="imgBg">
                 <div class="top">
-                    <h2>TOP</h2>
+                    <span>TOP</span>
                 </div>
             </div>
         </div>
@@ -48,6 +48,7 @@ export default {
     p {
         font-size: 20px;
         line-height: 30px;
+        color:$-text-grey ;
     }
 
     .imgBg {
@@ -69,6 +70,12 @@ export default {
         position: absolute;
         right: 0;
         bottom: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: bold;
     }
 }
 

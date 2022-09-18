@@ -102,6 +102,9 @@ export default {
             border-radius: 50%;
             color: white;
         }
+        .circle:hover{
+            background-color: white;
+        }
 
         .special {
             background-color: white;

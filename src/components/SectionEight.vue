@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class="top">
-            <h2>TOP</h2>
+            <span>TOP</span>
         </div>
     </div>
 </template>
@@ -39,16 +39,20 @@ export default {
     border-top: solid 2px $-border-raw;
 
     .top {
-        position: absolute;
-        right: 0;
-        top: 5%;
-        height: 60px;
-        width: 60px;
-        text-align: center;
-        background-color: $-top-icon-bg;
-        color: white;
-        font-weight: bold;
-    }
+            position: absolute;
+            right: 0;
+            top: 5%;
+            height: 80px;
+            width: 80px;
+            text-align: center;
+            background-color: $-top-icon-bg;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+        }
 
     * {
         font-family: "Open-Sans", sans-serif;

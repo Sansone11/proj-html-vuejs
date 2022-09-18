@@ -26,7 +26,7 @@
                     <div class="header">
                         <img src="../assets/img/h5-custom-icon-7.png" alt="">
                         <h3>Standard</h3>
-                        <p>$12</p>
+                        <p class="price">$12</p>
                     </div>
                     <div>
                         <ul>
@@ -38,7 +38,7 @@
                             <li><a class="mat" href="#"><i class="fa-solid fa-xmark"></i></a></li>
                             <li><a class="mat" href="#"><i class="fa-solid fa-xmark"></i></a></li>
                             <li><a class="mat" href="#"><i class="fa-solid fa-xmark"></i></a></li>
-                            <li>
+                            <li class="button__heigth">
                                 <div class="but__wrapprer">
                                     <button><a class="special" href="#">GET IT NOW</a></button>
                                 </div>
@@ -50,18 +50,18 @@
                     <div class="header">
                         <img src="../assets/img/h5-custom-icon-8.png" alt="">
                         <h3>Professional</h3>
-                        <p>$59</p>
+                        <p class="price">$59</p>
                     </div>
                     <ul>
                         <li>4</li>
                         <li><a class="mat" href="#">30 Days</a></li>
-                        <li><a class="mat" href="#"><i class="fa-solid fa-check"></i></a></li>
+                        <li><a class="mat" href="#"><i class="fa-regular fa-check"></i></a></li>
                         <li><a class="mat" href="#"><i class="fa-solid fa-check"></i></a></li>
                         <li><a class="mat" href="#"><i class="fa-solid fa-check"></i></a></li>
                         <li><a class="mat" href="#"><i class="fa-solid fa-check"></i></a></li>
                         <li><a class="mat" href="#"><i class="fa-solid fa-xmark"></i></a></li>
                         <li><a class="mat" href="#"><i class="fa-solid fa-xmark"></i></a></li>
-                        <li>
+                        <li class="button__heigth">
                             <div class="but">
                                 <button class="active"><a href="#">GET IT NOW</a></button>
                             </div>
@@ -72,7 +72,7 @@
                     <div class="header">
                         <img src="../assets/img/h5-custom-icon-9.png" alt="">
                         <h3>Advanced</h3>
-                        <p>$88</p>
+                        <p class="price">$88</p>
                     </div>
                     <ul>
                         <li>6</li>
@@ -83,7 +83,7 @@
                         <li><a class="mat" href="#"><i class="fa-solid fa-check"></i></a></li>
                         <li><a class="mat" href="#"><i class="fa-solid fa-check"></i></a></li>
                         <li><a class="mat" href="#"><i class="fa-solid fa-check"></i></a></li>
-                        <li>
+                        <li class="button__heigth">
                             <div class="but_wrapper">
                                 <button><a href="#">GET IT NOW</a></button>
                             </div>
@@ -134,6 +134,8 @@ export default {
         text-decoration: none;
         list-style: none;
         text-align: center;
+        margin: 0;
+        padding: 0;
 
 
     }
@@ -143,6 +145,10 @@ export default {
         width: 100%;
         color:$-text-grey ;
        
+    }
+    .price{
+        color: #000;
+        font-weight: bold;
     }
     h2{
         font-size: 70px;
@@ -159,6 +165,7 @@ export default {
 
     p {
         font-size: 20px;
+        color:$-text-grey ;
     }
 
     li {
@@ -175,6 +182,11 @@ export default {
         border-top: solid 1px $-border-raw ;
         border-bottom: solid 1px $-border-raw ;
         height: 60px;
+    }
+
+    .button__heigth{
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     .image {

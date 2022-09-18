@@ -67,15 +67,6 @@ export default {
     padding-right: 4rem;
     *{
     font-family: "Open-Sans",sans-serif;
-}
-
-    .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba($color: #000000, $alpha: 0.2);
     }
 
     .hero {
@@ -145,6 +136,10 @@ export default {
         height: 100%;
     }
 }
+.circle:hover{
+    background-image: url(../assets/img/interactive-map-slider-icon-close.png);
+    background-position: center;
+}
 
 .nav__bar {
     display: flex;
@@ -172,8 +167,8 @@ export default {
         text-decoration: none;
         color: white;
     }
-    li:hover{
-        color:$-register-button ;
+    li:hover a{
+        background-color:$-register-button ;
         i{
             color: white;
         }

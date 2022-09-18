@@ -84,10 +84,10 @@
                 </ul>
             </div>
             <div class="top">
-                <h2>TOP</h2>
+                <span>TOP</span>
             </div>
             <div class="top_1">
-                <h2>TOP</h2>
+                <span>TOP</span>
             </div>
         </div>
 
@@ -197,6 +197,7 @@ export default {
         p {
             font-size: 20px;
             max-width: 300px;
+            color:$-text-grey ;
         }
 
         .text__header {
@@ -250,6 +251,10 @@ export default {
                 background-color: $-bg-blu;
             }
 
+            .circle:hover{
+                background-color: $-register-button;
+            }
+
             .special {
                 background-color: $-register-button;
             }
@@ -265,6 +270,12 @@ export default {
             background-color: $-top-icon-bg;
             color: white;
             font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: bold;
         }
 
         .top_1 {
@@ -276,6 +287,12 @@ export default {
             text-align: center;
             background-color: $-top-icon-bg;
             color: white;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            font-size: 20px;
             font-weight: bold;
         }
     }
